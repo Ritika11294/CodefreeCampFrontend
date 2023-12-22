@@ -32,7 +32,7 @@ const Signin = () => {
 
     const handleGoogleLogin = () => {
         window.location.reload();
-        window.location.href = 'http://localhost:5000/auth/google';
+        window.location.href = 'https://freecodecamp-deploy.onrender.com/auth/google';
          
     };
 
