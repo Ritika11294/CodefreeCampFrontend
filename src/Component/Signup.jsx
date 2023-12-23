@@ -20,9 +20,11 @@ const Signup = () => {
         try {
             const response = await axios.post(`https://freecodecamp-deploy.onrender.com/registration`, values);
             console.log('User registered successfully:', response.data);
+            window.alert('User registered successfully');
             navigate('/login');
         }
         catch (err) {
+            alert ("Registeration failed")
             console.error('Error registering user:', err);
         }
 
